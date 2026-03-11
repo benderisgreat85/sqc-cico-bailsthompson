@@ -297,13 +297,6 @@ public class Main {
     panelStatus.setMaximumSize(new Dimension(640, 480));
     panelStatus.setBackground(Color.blue);
 
-    //Done button processing
-    buttonDone = new JButton("DONE");
-    buttonDone.setAlignmentX(JComponent.CENTER_ALIGNMENT);
-    buttonDone.addActionListener(handler);
-    buttonDone.setForeground(Color.blue);
-    panelStatus.add(buttonDone);
-
     panelStatus.add(Box.createVerticalGlue());
     labelUser = new JLabel("Registrant", JLabel.LEADING);
     labelUser.setFont(fontMain);
@@ -316,6 +309,13 @@ public class Main {
     labelState.setAlignmentX(JComponent.CENTER_ALIGNMENT);
     labelState.setForeground(Color.magenta);
     panelStatus.add(labelState);
+
+    //Done button processing
+    buttonDone = new JButton("DONE");
+    buttonDone.setAlignmentX(JComponent.CENTER_ALIGNMENT);
+    buttonDone.addActionListener(handler);
+    buttonDone.setForeground(Color.blue);
+    panelStatus.add(buttonDone);
 
     panelStatus.add(Box.createVerticalGlue());
 
